@@ -46,9 +46,9 @@ export default function RegisterPage() {
 
       // Redirect after success
       window.location.href = "/auth/login"
-    } catch (err: any) {
-      console.error("❌ Registration error:", err)
-      setError(err.message)
+    } catch {
+      console.error("❌ Registration error:")
+      // setError(err.message)
     } finally {
       setLoading(false)
     }

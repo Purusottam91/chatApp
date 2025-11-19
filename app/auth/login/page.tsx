@@ -54,8 +54,8 @@ export default function LoginPage() {
       localStorage.setItem("token", data.token)
       console.log("Login successful:", data)
       router.push("/dashboard") // ✅ redirect to dashboard or home
-    } catch (error: any) {
-      toast.error(error.message)
+    } catch{
+      toast.error("error logging in")
     } finally {
       setLoading(false)
     }
