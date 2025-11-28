@@ -60,7 +60,7 @@ export default function RegisterPage() {
         <CardHeader>
           <CardTitle className="text-center text-2xl font-bold">Create an Account</CardTitle>
           <CardDescription className="text-center">
-            Join the chat community today 👋
+            Join the chat community today and Enjoy 👋
           </CardDescription>
         </CardHeader>
 
