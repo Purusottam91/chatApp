@@ -46,9 +46,9 @@ export default function RegisterPage() {
 
       // Redirect after success
       window.location.href = "/auth/login"
-    } catch (err: any) {
-      console.error("❌ Registration error:", err)
-      setError(err.message)
+    } catch {
+      console.error("❌ Registration error:")
+      // setError(err.message)
     } finally {
       setLoading(false)
     }
@@ -60,7 +60,7 @@ export default function RegisterPage() {
         <CardHeader>
           <CardTitle className="text-center text-2xl font-bold">Create an Account</CardTitle>
           <CardDescription className="text-center">
-            Join the chat community today 👋
+            Join the chat community today and Enjoy 👋
           </CardDescription>
         </CardHeader>
 

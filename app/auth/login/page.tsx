@@ -54,8 +54,8 @@ export default function LoginPage() {
       localStorage.setItem("token", data.token)
       console.log("Login successful:", data)
       router.push("/dashboard") // ✅ redirect to dashboard or home
-    } catch (error: any) {
-      toast.error(error.message)
+    } catch{
+      toast.error("error logging in")
     } finally {
       setLoading(false)
     }
@@ -67,7 +67,7 @@ export default function LoginPage() {
         <CardHeader>
           <CardTitle className="text-center text-2xl font-bold">Welcome Back 👋</CardTitle>
           <CardDescription className="text-center">
-            Login to your ChatApp account
+            Login to your ChatApp account and Do what you want!
           </CardDescription>
         </CardHeader>
 
